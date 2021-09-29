@@ -1,0 +1,29 @@
+<div class="quizlet">
+  <h1 id="quiz-title">{{ quizlet.quiz_title }} </h1>
+  <div class="question" *ngIf="activeQuestionIndex < quizlet.questions.length">
+    <h3>{{activeQuestion.title}}</h3>
+    <h5 class="error-message">{{errorMessage}}</h5>
+    <div *ngFor="let option of activeQuestion.options">
+      <!-- <input type="radio"
+       [value]="option.value"
+       [(ngModel)]="selectedValue"
+       (ngModelChange)="choose($event)"
+       [name]="activeQuestionIndex">
+      <label [for]="option.value">{{option.displayName}}</label> -->
+    </div>
+  </div>
+  <div id="final-result" *ngIf="finalResult">
+    You got {{finalResult}}!<br>
+
+    <span>RESULT SUMMARY:</span>
+    <table>
+      <tr *ngFor="let answer of quizlet.answers">
+        <td>{{answer.displayName}}</td>
+        <td>{{ (answer.points / quizlet.questions.length) * 100}}%</td>
+      </tr>
+    </table>
+  </div>
+  <button *ngIf="activeQuestionIndex > 0 && activeQuestionIndex < quizlet.questions.length" id="back-button" (click)="prevQuestion()">Back</button>
+  <button *ngIf="activeQuestionIndex < quizlet.questions.length" id="next-button" (click)="nextQuestion()">Next</button>
+  <button *ngIf="activeQuestionIndex == quizlet.questions.length" id="reset" (click)="reset()">Take Again</button>
+</div>

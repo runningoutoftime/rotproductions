@@ -1,0 +1,23 @@
+#menu {
+  height: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  width: 30px;
+  background-color: #d4452fd1;
+  border-right: 1px solid rgba(103, 49, 26, 0.845);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  position: fixed;
+  justify-content: space-between;
+  transition: opacity 0.2s ease;
+}
+.top {
+  padding-top: 20px;
+}
+.middle {
+  height: 200px;
+}
+.bottom {
+  padding-bottom: 10px;
+}

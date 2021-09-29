@@ -1,0 +1,13 @@
+img {
+  margin-left: 3px;
+  padding: 4px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  object-position: center;
+}
+
+img:hover {
+  background-color: salmon;
+  transition: 0.3s;
+}

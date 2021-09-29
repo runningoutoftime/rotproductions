@@ -1,0 +1,22 @@
+
+<!-- Horizontal toggle menu -->
+<div id="menu">
+  <div class="top">
+    <!-- Home (cool animations and slideshows) -->
+    <a [routerLink]="['/home']">
+      <menu-item pageName="home" imageName="home-icon.png"></menu-item>
+    </a>
+  </div>
+  <div class="middle"> 
+    <!-- MiniMovies, Nerd (blog), Music ( and music videos?)  -->
+    <a [routerLink]="['/mini-movies']">
+      <menu-item pageName="mini-movie" imageName="movie-icon.png"></menu-item>
+    </a>
+  </div>
+  <div class="bottom">
+    <!-- contact me-->
+    <a [routerLink]="['/contact']">
+      <menu-item pageName="contact" imageName="me.png"></menu-item>
+    </a>
+  </div>
+</div>
