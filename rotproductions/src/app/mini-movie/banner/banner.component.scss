@@ -1,0 +1,67 @@
+.mini-movie-banner {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  max-width: 1000px;
+  height: 280px;
+  border-radius: 30px;
+  border: solid white 4px;
+  transition:all 0.3s ease;
+  position: relative;
+}
+.mini-movie-banner::before {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-image: url("/assets/arkansas-banner.png");
+  opacity: 0.30;
+  background-size: 1000px 400px;
+  background-color:#91534c47;
+}
+.mini-movie-banner:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  transition:all 0.3s ease;
+  cursor: pointer;
+}
+.title {
+  font-family: Chalkduster, fantasy;
+  font-size: x-large;
+  text-align: center;
+  padding: 30px;
+}
+.raiting-summary {
+  padding-left: 20px;
+
+  .raiting {
+    border: white solid 1px;
+    background: #000000e0;
+    padding: 2px;
+  }
+  .tag {
+    margin: 10px;
+    border: lightgrey solid 1px;
+    border-radius: 10px;
+    padding: 2px;
+    background: black;
+  }
+}
+
+.summary {
+  padding: 20px;
+  font-size: small;
+  max-width: 350px;
+}
+.watch-button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  text-align: center;
+}
