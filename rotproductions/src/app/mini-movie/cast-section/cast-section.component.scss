@@ -1,0 +1,27 @@
+.cast-div {
+  margin-top: 20px;
+  padding: 20px 10px;
+  background: white;
+  display: block;
+  width: 200px;
+  height: 70px;
+  color: black;
+  border-radius: 20px;
+}
+.actor-img {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.details {
+  padding-top: 10px;
+  padding-left: 10px;
+
+  .actor-name {
+    font-weight: bolder;
+  }
+  .character-name {
+    font-weight: lighter;
+  }
+}

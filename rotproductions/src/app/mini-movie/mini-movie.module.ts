@@ -4,6 +4,7 @@ import { MiniMovieComponent } from './mini-movie.component';
 import { WatchButtonComponent } from './watch-button/watch-button.component';
 import { QuizletComponent } from './quizlet/quizlet.component';
 import { BannerComponent } from './banner/banner.component';
+import { CastSectionComponent } from './cast-section/cast-section.component';
 
 
 
@@ -12,7 +13,8 @@ import { BannerComponent } from './banner/banner.component';
     MiniMovieComponent,
     WatchButtonComponent,
     QuizletComponent,
-    BannerComponent
+    BannerComponent,
+    CastSectionComponent
   ],
   imports: [
     CommonModule

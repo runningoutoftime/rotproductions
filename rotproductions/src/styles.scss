@@ -15,6 +15,7 @@ body {
   font-family: Gill Sans, sans-serif;
   color: whitesmoke;
   padding-left: 10px;
+  overflow: scroll;
 
   p {
     color: lightgrey;
@@ -32,4 +33,18 @@ body {
   button:hover {
     background-color: rgb(209, 110, 99);
   }
+}
+.center {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.title {
+  font-family: Chalkduster, fantasy;
+  font-size: larger;
+}
+.left {
+  float: left;
 }
